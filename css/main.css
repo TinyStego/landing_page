@@ -31,7 +31,8 @@ header,
 main,
 #company-info,
 #info,
-.info-image{
+.info-image,
+#quote{
     flex-direction: column;
 }
 
@@ -123,11 +124,25 @@ section {
 }
 
 #quote {
+    justify-content: center;
+    align-items: center;
     background-color: #E5E7EB;
     color: #1F2937;
     font-size: 36px;
     font-style: italic;
     font-weight: 100;
+}
+
+#quote p {
+    width: 50%;
+    margin: 0;
+}
+
+#quote p:last-child {
+    font-style: normal;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: right;
 }
 
 footer p {
