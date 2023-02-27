@@ -29,7 +29,9 @@ button {
 
 header,
 main,
-#company-info{
+#company-info,
+#info,
+.info-image{
     flex-direction: column;
 }
 
@@ -100,7 +102,24 @@ main h2 {
 }
 
 section {
-    height: 250px;
+    height: 500px;
+}
+
+#info {
+    justify-content: center;
+    align-items: center;
+}
+
+.info-image {
+    width: 200px;
+    margin: 20px 50px; 
+}
+
+.image {
+    width: 200px;
+    height: 180px;
+    border: 5px solid #3882F6;
+    border-radius: 15px;
 }
 
 #quote {
