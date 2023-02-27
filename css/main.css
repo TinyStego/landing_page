@@ -32,7 +32,8 @@ main,
 #company-info,
 #info,
 .info-image,
-#quote{
+#quote,
+#cta-text{
     flex-direction: column;
 }
 
@@ -143,6 +144,29 @@ section {
     font-size: 23px;
     font-weight: bold;
     text-align: right;
+}
+
+#cta {
+    justify-content: center;
+    align-items: center;
+}
+
+#cta-container {
+    height: 200px;
+    width: 70%;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#cta-container button {
+    border: 2px solid white;
+}
+
+#cta-container h2,
+#cta-container p{
+    color: white;
+    margin: 0;
 }
 
 footer p {
