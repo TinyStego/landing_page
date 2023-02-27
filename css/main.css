@@ -7,6 +7,30 @@
 html,
 body {
     font-family: Roboto, sans-serif;
+    width: 100%;
+    margin: 0;
+}
+
+.flex-container {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+button {
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+}
+
+header,
+main,
+#company-info{
+    flex-direction: column;
 }
 
 header,
@@ -14,7 +38,34 @@ footer {
     background-color: #1f2937;
 }
 
+header {
+    height: 500px;
+}
+
+#navbar {
+    margin: 20px 350px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#company-info-container {
+    justify-content: space-between;
+    width: 60%;
+    align-self: center;
+}
+
+#company-info-container > p {
+    background-color: grey;
+    align-self: center;
+    padding: 100px 170px;
+}
+
+#company-info {
+    width: 500px;
+}
+
 header h1 {
+    margin: 0;
     color: #F9FAF8;
     font-size: 48px; 
     font-weight: bold;
@@ -25,7 +76,7 @@ header h2 {
     font-size: 24px;
 }
 
-header p,
+header a,
 #company-info p {
     color: #E5E7EB;
     font-size: 18px;
@@ -36,10 +87,20 @@ button,
     background-color: #3882F6;
 }
 
+footer,
+button,
+#cta-container {
+    color: white;
+}
+
 main h2 {
     color: #1f2937;
     font-size: 36px;
     font-weight: bold;
+}
+
+section {
+    height: 250px;
 }
 
 #quote {
